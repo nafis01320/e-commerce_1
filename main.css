@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0.4em 7em;
+    /* position: fixed; */
+    width: 100vw;
+}
+
+.leftNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size:1.3em;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 0em 1.5em;
+}
+
+.cartIcon{
+    background: none;
+    border: none;
+    font-size: 1em;
+    margin: 0em 1em;
+    cursor: pointer;
+    padding: 0.2em 0.8em;
+    color: #626262;
+}
+
+.links > p{
+    color: grey;
+    margin: 0em 0.5em;
+    padding: 1em 0em;
+    cursor: pointer;
+}
+
+.links > p:hover{
+    color: orange;
+}
+
+.rightNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    width: 2em;
+    margin-right: 1em;
+    border-radius: 30%;
+}
+.pictuer_rounde{
+    /* border: 1px solid black; */
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin: 0em 0.5em;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.pictuer_rounde_image{
+    position: absolute;
+    width: 100%;
+    left: 1px;
+}
+
+/* body section */
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* height: 100vh; */
+    /* position: absolute; */
+    width: 100%;
+    flex-wrap: wrap;
+    transform: translateY(4.5em);
+    /* z-index: -1; */
+    /* top: 0; */
+}
+
+.body_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: fit-content;
+}
+
+.picContainer_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pics{
+    /* border: 1px solid rgb(24, 24, 24); */
+    width: 4em;
+    height: 4em;
+    margin: 1em 0.65em;
+    border-radius: 10px 10px 10px 10px ;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.picContainer_top{
+    /* border: 1px solid red; */
+    width: 20em;
+    height: 20em;
+    border-radius : 10px 10px 10px 10px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+.picContainer_top > img{
+    transition: 0.4s;
+}
+.picContainer_top:hover > img {
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    top: -77px;
+    left: -4.5em;
+    transition: 0.6s;
+}
+.picContainer_top:hover .forHover{
+    width: 30em;
+    height: 27em;
+    transition: 0.5s;
+}
+
+
+/* body right */
+
+.body_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    position: relative;
+    padding: 0em 1em;
+    margin-left: 1em;
+    z-index: -1;
+}
+
+.preModify{
+    display: flex;
+    
+}
+
+.priceTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.same_{
+    margin: 0.4em 0em;
+}
+.priceTag > p.percentage{
+    margin: 0em 0.6em;
+    padding: 0em 0.1em;
+    background: rgba(255, 176, 30, 0.555);
+    border-radius:2px 2px 2px 2px;
+    color: rgb(182, 97, 0);
+}
+
+.details{
+    margin-top: 1.5em;
+}
+
+.pricingBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    margin-top: 1.4em;
+}
+.pricingBox > .measurement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricingBox > .measurement > input{
+    width: 2em;
+    height: 2em;
+}
+.pricingBox > .measurement > button{
+        /* padding: 1em; */
+        width: 2em;
+        color: #cb6700;
+        height: 2em;
+        background: #e7e7e7;
+        border: none;
+        cursor: pointer;
+}
+.pricingBox > .measurement > button,.pricingBox > .measurement > input{
+    margin: 0em 0.1em;
+}
+
+.pricingBox > .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(221, 125, 0);
+    /* width: 6em; */
+    /* height: 1.7em; */
+    padding: 0.35em 1em;
+    margin-left: 1em;
+    border-radius: 4px 4px 4px 4px ;
+    cursor: pointer;
+}
+.pricingBox > .cart:hover{
+    box-shadow: 0 0 9px #5e5e5e;
+}
+.pricingBox > .cart > p{
+    margin-left: 0.5em;
+}

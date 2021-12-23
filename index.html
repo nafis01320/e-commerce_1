@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="load.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      src="https://kit.fontawesome.com/35628e4dda.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="media_">
+      <button class="media_btn">
+        <i class="fas logo_media fa-bars"></i>
+      </button>
+      <div class="media_display">
+        <button class="child_media_btn">
+          <i class="fas logo_media fa-bars"></i>
+        </button>
+        <div class="links_child">
+          <p>Collection</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>about</p>
+          <p>contact</p>
+        </div>
+      </div>
+    </div>
+    <section class="navbar">
+      
+      <div class="leftNav">
+        <p class="logo">Sneakers</p>
+        <div class="links">
+          <p>Collection</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>about</p>
+          <p>contact</p>
+        </div>
+      </div>
+      <div class="rightNav">
+        <button class="cartIcon"><i class="fas fa-shopping-cart"></i></button>
+        <div class="pictuer_rounde">
+          <img class="pictuer_rounde_image" src="/pictures/dp.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="body">
+      <!-- >>got to work with this -->
+      <div class="body_left">
+        <div class="picContainer_top">
+          <img src="/pictures/one.png" alt="" />
+        </div>
+        <div class="picContainer_bottom">
+          <div class="pics"><img src="/pictures/two.png" alt="" /></div>
+          <div class="pics"><img src="/pictures/three.png" alt="" /></div>
+          <div class="pics"><img src="/pictures/six.jpg" alt="" /></div>
+          <div class="pics"><img src="/pictures/seven.jpg" alt="" /></div>
+        </div>
+      </div>
+      <!-- >>got to work with this -->
+      <div class="body_right">
+        <p class="body_right_text same_">SNEAKER COMPANY</p>
+        <div class="preModify same_">
+          <h1>
+            Fall Limited Edition<br />
+            Sneakers
+          </h1>
+        </div>
+        <div class="details same_">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            sunt<br />
+            tempora error explicabo itaque eligendi rem voluptas modi minima
+            ipsam. <br />Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quos, magni.
+          </p>
+        </div>
+        <div class="priceTag same_">
+          <h3>$100.00</h3>
+          <p class="percentage">-5%</p>
+        </div>
+        <div class="pricingBox">
+          <div class="measurement">
+            <button>-</button>
+            <input type="text" disabled />
+            <button>+</button>
+          </div>
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- click to load the display_ -->
+    <section class="display_">
+      <!-- main box -->
+      <button class="cancel">cancel</button>
+      <div class="display_father">
+        <button class="btn_display left_display"><<</button>
+        <button class="btn_display right_display">>></button>
+        <div class="picContainer_display_">
+          <div class="pic_goesHere">
+            <div class="small__"><img src="/pictures/dp.jpg" alt="" /></div>
+            <div class="small__"><img src="/pictures/four.png" alt="" /></div>
+            <div class="small__"><img src="/pictures/one.png" alt="" /></div>
+            <div class="small__ hellowPic">
+              <img class="thePic" src="/pictures/seven.jpg" alt="" />
+            </div>
+            <div class="small__"><img src="/pictures/three.png" alt="" /></div>
+          </div>
+        </div>
+        <div class="smallDiv">
+          <div class="small"><img src="/pictures/dp.jpg" alt="" /></div>
+          <div class="small"><img src="/pictures/five.png" alt="" /></div>
+          <div class="small"><img src="/pictures/four.png" alt="" /></div>
+          <div class="small"><img src="/pictures/one.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script>
+  let p = document.querySelector('.logo');
+  let display = document.querySelector(".display_");
+  let div = document.querySelector(".picContainer_top");
+  let cancelBtn = document.querySelector(".cancel");
+  let bool = true;
+  let media_btn = document.querySelector('.media_btn');
+  let media_button = document.querySelector('.child_media_btn');
+  let media_display = document.querySelector('.media_display');
+  div.addEventListener("click", function () {
+    // div.style.display = 'flex';
+    display.style.display = "flex";
+    bool = false;
+
+    console.log("hellow world");
+  });
+
+  cancelBtn.addEventListener("click", function () {
+    display.style.display = "none";
+  });
+
+  media_btn.addEventListener('click',function(){
+    p.style.display = 'none';
+    media_display.style.left = '0px';
+  })
+  media_button.addEventListener('click',function(){
+    media_display.style.left = '-250px';
+    p.style.display = 'block';
+  })
+</script>
